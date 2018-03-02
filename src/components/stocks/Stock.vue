@@ -4,8 +4,8 @@
             
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    NAME
-                    <small>(Price: PRICE)</small>
+                    {{stock.name}}
+                    Price: {{stock.price}}
                 </h3>
             </div>
 
@@ -17,7 +17,7 @@
                             type="number"
                             class="form-control"
                             placeholder="Quantity"
-                           
+                           v-model="quantity"
                     >
                 </div>
                 
@@ -67,4 +67,14 @@
             }
         }
     }*/
+
+export default {
+    props: ['stock'],
+    
+    data() {
+            return {
+                quantity: 3
+            }
+    }
+}
 </script>
