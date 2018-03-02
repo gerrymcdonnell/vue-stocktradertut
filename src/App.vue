@@ -2,6 +2,7 @@
   <div class="container">
     
     <!--header here-->
+    ended on vid 280 -buy button
     <app-header></app-header>
     
     <div class="row">
